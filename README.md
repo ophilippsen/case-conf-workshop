@@ -36,7 +36,13 @@ This starts a PostgreSQL container via Docker Compose.
 npm run db:migrate
 ```
 
-### 4. Seed the Database
+### 4. Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### 5. Seed the Database
 
 ```bash
 npm run db:seed
@@ -47,7 +53,7 @@ This creates test users and sample data:
 - **User**: `alice@example.com` / `AlicePassword123`
 - **User**: `bob@example.com` / `BobPassword123`
 
-### 5. Start Development Server
+### 6. Start Development Server
 
 ```bash
 npm run dev
